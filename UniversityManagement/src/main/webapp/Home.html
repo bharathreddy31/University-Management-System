@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="deco.css">
+  <style>
+   
+    body{
+        text-align:center;
+        
+	background-color:yellow;
+
+
+    }
+  
+   label{
+    font-size:25px;
+    
+  }
+  button{
+  border-radius:15px;
+  }
+    button {
+    background-color: #4CAF50; /* Green */
+    border:none;
+    border-radius:8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  </style>
+</head>
+<body bgcolor="white">
+  <div class="form-container">
+   <h1>Login</h1><br>
+     <button id="admin-login">Login as Admin</button>
+    
+    
+  <form action="Demo" method="post">
+   
+    <div id="admin-form-container" class="form-container">
+      <form action="/submit_admin_login" method="post">
+        <label for="username">Enter Username*</label><br>
+        <input type="text" id="username" name="t1" required><br>
+        <label for="password">Enter Password*</label><br>
+        <input type="password" id="password" name="t2" required><br><br>
+        <input type="submit" value="Admin Login">
+      </form>
+    </div>
+   </form>
+    <button id="student-login">Login as Student</button>
+    <form action="retrive" method="post">
+    <div id="student-form-container" class="form-container">
+      <form action="/submit_student_login" method="post">
+        <label for="roll-number">Enter Roll Number*</label><br>
+        <input type="text" id="roll-number" name="t1" required><br>
+        <label for="password">Enter Password*</label><br>
+        <input type="password" id="password" name="t2" required><br><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    </form>
+    
+    
+  </div>
+<script>
+  const adminLoginButton = document.getElementById("admin-login");
+  const studentLoginButton = document.getElementById("student-login");
+  const adminFormContainer = document.getElementById("admin-form-container");
+  const studentFormContainer = document.getElementById("student-form-container");
+  const stdinfo = document.getElementById("student-info");
+  
+  adminLoginButton.addEventListener("click", () => {
+    adminFormContainer.style.display = "block";
+    studentFormContainer.style.display = "none";
+  });
+  
+  studentLoginButton.addEventListener("click", () => {
+    studentFormContainer.style.display = "block";
+    adminFormContainer.style.display = "none";
+  });
+  
+ 
+  
+  // Hide the student and admin login forms initially
+  adminFormContainer.style.display = "none";
+  studentFormContainer.style.display = "none";
+  
+  // Add animations to the buttons
+  adminLoginButton.addEventListener("mouseover", () => {
+    adminLoginButton.style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5)";
+  });
+  
+  adminLoginButton.addEventListener("mouseout", () => {
+    adminLoginButton.style.boxShadow = "none";
+  });
+  
+  studentLoginButton.addEventListener("mouseover", () => {
+    studentLoginButton.style.boxShadow = "0 0 5px rgba(0, 0, 0, 0.5)";
+  });
+  
+  studentLoginButton.addEventListener("mouseout", () => {
+    studentLoginButton.style.boxShadow = "none";
+  });
+  
+  
+  </script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  padding: 15px;
+  margin-top: 50px;
+  border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  
+}
+
+form {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body background="b1.jpg">
+<h1>Register Student</h1>
+<form action="insertdata" method=get>
+Enter student name:<input type="text" name="t1"><br>
+
+Enter student rollno:<input type="text" name="t2"><br>
+Enter student password:<input type="number" name="t3"><br>
+Enter student m1 marks:<input type="number" name="t4"><br>
+Enter student m2 marks:<input type="number" name="t5"><br>
+Enter student m3 marks:<input type="number" name="t6"><br>
+Enter student m4 marks:<input type="number" name="t7"><br>
+Enter student m5 marks:<input type="number" name="t8"><br>
+Enter student m6 marks:<input type="number" name="t9"><br>
+<input type="submit" value="Insert">
+</form>
+</body>
+</html>
