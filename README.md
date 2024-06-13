@@ -1,2 +1,9 @@
 # University-Management-System
-It"s a basic level University Management System project which consists of admin and student login details on the home screen
+Concepts :
+--> Front-end
+--> Java
+--> Servlets
+--> JDBC
+It"s a basic level project which displays students marks.
+Here admin is allowed to "register" a student,"update" student details and can also "delete" a student. 
+And student can also login however he/she can only see their results. 
